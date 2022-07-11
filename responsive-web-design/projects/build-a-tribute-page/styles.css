@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Gentium+Book+Basic&family=Syne+Mono&display=swap');
+
+:root {
+	--black:  #1A1C1A;
+	--vintage: #F3DFC1;
+}
+
+body {
+	font-family: 'Syne Mono', monospace;
+	background-color: var(--vintage);
+	color:  var(--black);
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+	height: 85rem;
+	padding: 1rem;
+	border-radius: 1em 1em 0 0;
+}
+
+.box {
+	border-style: solid;
+	border-width: 1px;
+	border-color: dimgray;
+	box-shadow: -10px 10px var(--black);
+	border: 1px solid #000;
+}
+
+header > p, #img-caption, article, footer {
+	font-size: 1.2em;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+	display: block;
+	margin:  0 auto;
+	position: relative;
+}
+
+header {
+	text-align: center;
+}
+
+#title {
+	font-family: Almendra, serif;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+#img-div {
+	text-align: center;
+}
+
+#tribute-info {
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 1.25em;
+}
+
+article, footer {
+	padding-left: 2em;
+}
+
+h3 {
+	font-family: 'Gentium Book Basic', serif;
+	text-transform: uppercase;
+}
