@@ -11,13 +11,25 @@ body {
 	color:  var(--black);
 }
 
+@media print {
+  body {
+    background-color: transparent;
+  }
+}
+
 .flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;	
-	height: 85rem;
+	height: 100%;
 	padding: 1rem;
 	border-radius: 1em 1em 0 0;
+}
+
+@media all and (orientation: portrait) {
+	.flex {
+		height: 100rem;
+	}
 }
 
 .box {
@@ -26,6 +38,7 @@ body {
 	border-color: dimgray;
 	box-shadow: -10px 10px var(--black);
 	border: 1px solid #000;
+	margin-bottom: 2.5em;
 }
 
 header > p, #img-caption, article, footer {
@@ -45,6 +58,8 @@ img {
 
 header {
 	text-align: center;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 #title {
