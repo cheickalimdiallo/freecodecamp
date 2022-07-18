@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel within thyself - Registration form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Travel within thyself - Registration form</h1>
+    <p id="description">Take a chance to undercover your true self.</p>
+    <form id="survey-form">
+        <div><label for="name" id="name-label">Name</label> <br> <input type="text" id="name" placeholder="Full name" required></div>
+        <div><label for="date-of-birth">Date of birth</label> <br> <input type="date" id="date-of-birth" required></div>
+        <div><label for="email" id="email-label">E-mail</label> <br> <input type="email" id="email" placeholder="E-mail" required></div>
+        <div><label for="address">Address</label> <br> <textarea id="address" cols="30" rows="5" placeholder="Area, City, Region, Country"></textarea></div>
+        <div><label for="number" id="number-label">How much are willing to pay?</label> <br> <input type="number" id="number" min="1" max="1000000000" placeholder="Amount"></div>
+        <div><label for="dropdown">What best describes you?</label> <br>
+            <select id="dropdown">
+                <option>Curious</option>
+                <option>Truth seeker</option>
+                <option>Looking for a miracle</option>
+                <option>Spiritual</option>
+                <option>Believer</option>
+            </select>
+        </div>
+        <div>
+            <label>Do you have super powers? </label> <br>
+            <input type="radio" name="super-powers" id="super-powers-yes" value="Yes"> <label for="super-powers-yes">Yes</label>
+            <input type="radio" name="super-powers" id="super-powers-no" value="No"> <label for="super-powers-no">No</label>
+            
+        </div>
+        <div> 
+            <label>If you have super powers, how did you gained them?</label>
+                <ul>
+                    <li><input type="checkbox" name="super-powers-acquisition-method" value="Gifted by God" id="gifted-god"> <label for="gifted-god">Gifted by God</label></li>
+                    <li><input type="checkbox" name="super-powers-acquisition-method" value="Given by a spiritual entity" id="given-spiritual-entity"> <label for="given-spiritual-entity">Given by a spiritual entity</label></li>
+                    <li><input type="checkbox" name="super-powers-acquisition-method" value="Stolen from someone" id="stolen-from-someone"> <label for="stolen-from-someone">Stolen from someone</label></li>
+                    <li><input type="checkbox" name="super-powers-acquisition-method" value="Unknown" id="unknown"> <label for="unknown">Unknown</label></li>
+                </ul>
+            
+        </div>
+        <div>
+            <label for="expectations">What are your expectations from such a journey?</label> <br>
+            <textarea id="expectations" cols="50" rows="5"></textarea>
+        </div>
+        <div><input type="submit" id="submit" value="Register"></div>
+    </form>
+</body>
+
+</html>
